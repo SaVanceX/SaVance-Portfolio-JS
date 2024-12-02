@@ -37,9 +37,9 @@
   </main>
   <footer>
     <h2>Contact</h2>
-    <form>
+    <form id="contact-form">
       <label>
-        Name <input type="text" name="name" autocomplete="name">
+        Name <input id="name" type="text" name="name" autocomplete="name">
       </label>
       <label>
         Email
@@ -49,8 +49,11 @@
         Message
         <input type="text" name="message">
       </label>
-      <button>Submit</button>
+      <button type="submit">Submit</button>
     </form>
+    <div class="message-container">
+      <h3 id="message">Don't Hesitate</h3>
+    </div>
   </footer>
 </body>
 
