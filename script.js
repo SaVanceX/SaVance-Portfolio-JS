@@ -4,9 +4,9 @@
 })();
 
 const form = document.getElementById('contact-form')
-const userName = document.getElementById('name')
-const userEmail = document.getElementById('email')
-const userMessage = document.getElementById('message')
+const userName = document.getElementById('user_name')
+const userEmail = document.getElementById('user_email')
+const userMessage = document.getElementById('user_message')
 const messageContainer = document.querySelector('.message-container');
 const message = document.getElementById('message');
 
@@ -30,30 +30,36 @@ function validateForm() {
 }
 
 const templateParams = {
-  name: userName,
-  email: userEmail,
-  message: userMessage,
+  name: userName.value,
+  email: userEmail.value,
+  message: userMessage.value,
 }
 
+
 function processFormData(e) {
-  console.log('in process form function')
   e.preventDefault()
-  
+
+  const templateParams = {
+    "to_name": "SaVance",
+    "from_name": userName.value,
+    "from_email": userEmail.value,
+    message: userMessage.value,
+  }
+
+
   // Validating form 
   validateForm();
 
-  // Sending the formdata
   if(isValid === true) {
-    console.log('line 46')
-  // emailjs.send('service_ba3rdvd', 'template_xhzsd92', templateParams)
-  // .then(function(response){
-  //     message.innerText ="Thank you very much I will reply to you as soon as possible!";
-  //     message.style.color = 'green';
-  //     messageContainer.style.borderColor = 'green';
-  //     console.log('SUCCESS', response.status, response.text);
-  // }, function(error){
-  //     console.log("FAILED", error);
-  // })
+  emailjs.send('service_ba3rdvd', 'template_xhzsd92', templateParams)
+  .then(function(response){
+      message.innerText ="Thank you very much I will reply to you as soon as possible!";
+      message.style.color = 'green';
+      messageContainer.style.borderColor = 'green';
+      console.log('SUCCESS', response.status, response.text);
+  }, function(error){
+      console.log("FAILED", error);
+  })
   }
 }
 
