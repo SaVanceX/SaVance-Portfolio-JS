@@ -7,6 +7,7 @@
 :root {
   --primary-color: #00E0E0;
   --secondary-color: #31343A;
+  --tertiary-color: #FAF9F6;
 }
 
 body {
@@ -20,6 +21,36 @@ body {
 
 p, li {
   font-size: 16px;
+}
+/* ----- HEADER / HERO section ----  */
+nav {
+  display: flex;
+  border: lightblue solid 2px;
+  justify-content: space-between;
+  padding-left: 8px;
+  padding-right: 8px;
+  position: sticky;
+  z-index: 100;
+  top: 16px;
+  color: var(--tertiary-color);
+  height: 48px;
+}
+
+nav p {
+  border: solid lightgreen 2px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 40%;
+  border: solid red 2px;
+  height: 100%;
+}
+
+li {
+  list-style: none;
 }
 
 .hero {
@@ -38,34 +69,21 @@ p, li {
   margin-top: 48px;
   margin-bottom: 48px;
   padding: 8px;
+  color: var(--tertiary-color);
 }
 
 
 .hero div {
   display: flex;
+  gap: 32px;
 }
 
-nav {
-  display: flex;
-  border: lightblue solid 2px;
-  justify-content: space-between;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-left: 8px;
-  padding-right: 8px;
+.hero div p {
+  border: solid var(--primary-color) 2px;
+  border-radius: 16px;
+  padding: 16px;
+  text-align: left;
+  line-height: 1.5;
 }
 
-nav p {
-  border: solid lightgreen 2px;
-}
-
-nav ul {
-  display: flex;
-  justify-content: space-around;
-  width: 40%;
-  border: solid red 2px;
-}
-
-li {
-  list-style: none;
-}
+/* -------------------- */
