@@ -1,0 +1,49 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: solid 1px black;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: auto 32px;
+}
+
+header.hero {
+}
+
+/* mobile */
+
+@media (max-width: 576px) {
+
+  body {
+    margin: auto 16px;
+  }
+  nav {
+    height: 48px;
+    bottom: 16px;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 15;
+    display: flex;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  nav p {
+    display: none;
+  }
+
+  nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
