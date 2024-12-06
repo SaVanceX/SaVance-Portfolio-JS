@@ -1,0 +1,29 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --body-copy: 1rem;
+  --mobile-heading-1: 2rem;
+  --mobile-heading-2: 1.5rem;
+  --mobile-heading-3: 1.17rem;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+
+
+/* Mobile Devices use ems? */
+
+/* Phones */ 
+/* @media screen and (max-width: 600px) {
+  
+} */
