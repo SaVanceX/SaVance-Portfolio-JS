@@ -30,10 +30,22 @@ body {
   display: flex;
   flex-direction: column;
   margin: auto 32px;
+  background-color: var(--secondary-color);
+  color: var(--tertiary-color)
+
+}
+
+input:focus, input:active {
+  outline: 0;
 }
 
 li {
   list-style: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: white;
 }
 
 h2 {
@@ -50,8 +62,6 @@ h2 {
     font-size: var(--body-copy);
     margin-left: 16px;
     margin-right: 16px;
-    background-color: var(--secondary-color);
-    color: var(--tertiary-color)
   }
 
   header.hero {
@@ -79,8 +89,8 @@ h2 {
   }
 
   nav {
-    height: 48px;
-    bottom: 16px;
+    height: 56px;
+    bottom: 32px;
     left: 0;
     right: 0;
     position: fixed;
@@ -89,7 +99,8 @@ h2 {
     margin-left: 16px;
     margin-right: 16px;
     border-radius: 8px;
-    border: solid 2px black;
+    border: solid 2px var(--secondary-color);
+    background-color: var(--primary-color);
   }
 
   nav p {
@@ -106,6 +117,7 @@ h2 {
     display: flex;
     align-items: center;
   }
+
 
 
   main {
@@ -179,8 +191,8 @@ h2 {
       }
     }
 
-    .message-container {
-      margin-bottom: 64px;
+    .copyright-socials {
+      margin-bottom: 156px;
     }
 
   }
