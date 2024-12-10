@@ -28,20 +28,25 @@
 
 body {
   font-size: var(--body-copy);
-  display: flex;
-  flex-direction: column;
-  margin: auto 32px;
   background-color: var(--secondary-color);
-  color: var(--tertiary-color)
+  color: var(--tertiary-color);
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  margin-left: 32px;
+  margin-right: 32px;
 }
 
 header.hero {
+  max-width: 1440px;
   background-color: var(--primary-color);
   padding: 24px;
   border-radius: 16px;
-
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 nav {
@@ -109,6 +114,8 @@ h2 {
 }
 
 .about-blurb {
+  max-width: 800px;
+  margin: auto;
   display: flex;
   gap: 16px;
 }
@@ -121,11 +128,13 @@ h2 {
 }
 
 main {
+  max-width: 1440px;
   background-color: var(--primary-color);
   margin-top: 8px;
   margin-bottom: 8px;
   border-radius: 16px;
   padding: 16px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 
   article {
     border: solid 1px var(--secondary-color);
@@ -155,6 +164,7 @@ main {
 
 
 footer {
+  max-width: 1440px;
   background-color: var(--primary-color);
   padding: 16px;
   border-radius: 16px;
