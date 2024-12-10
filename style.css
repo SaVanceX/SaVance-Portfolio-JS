@@ -37,10 +37,10 @@ body {
 .container {
   margin-left: 32px;
   margin-right: 32px;
+  max-width: 1440px;
 }
 
 header.hero {
-  max-width: 1440px;
   background-color: var(--primary-color);
   padding: 24px;
   border-radius: 16px;
@@ -117,7 +117,7 @@ h2 {
   max-width: 800px;
   margin: auto;
   display: flex;
-  gap: 16px;
+  gap: 32px;
 }
 
 .about-blurb p {
@@ -128,7 +128,6 @@ h2 {
 }
 
 main {
-  max-width: 1440px;
   background-color: var(--primary-color);
   margin-top: 8px;
   margin-bottom: 8px;
@@ -136,40 +135,43 @@ main {
   padding: 16px;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 
-  article {
-    border: solid 1px var(--secondary-color);
-    border-radius: 8px;
-    padding: 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-
-    header {
-      display: flex;
-      justify-content: space-between;
-    }
-
-    section {
-      display: flex;
-      justify-content: space-between;
-      align-items: end;
-       p.job-description {
-        width: 80%;
-        line-height: var(--line-height);
-      }
-    }
-
-  }
 }
 
 
+article {
+  border: solid 2px var(--secondary-color);
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  section {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+     p.job-description {
+      width: 80%;
+      line-height: var(--line-height);
+    }
+  }
+
+}
+
 footer {
-  max-width: 1440px;
   background-color: var(--primary-color);
   padding: 16px;
   border-radius: 16px;
 
   form {
+    max-width: 400px;
+    margin: auto;
     display: flex;
     flex-direction: column;
 
@@ -207,7 +209,22 @@ footer {
   }
 }
 
+/* ---- Extra Large Devices */
+@media (min-width: 1025px)  {
+  article {
+    max-width: 64%;
+    margin: auto;
+  }
+}
 
+
+/* ----- Large Devices ---- */
+@media (min-width: 769px) and (max-width: 1024px) {
+  article {
+    width: 90%;
+    margin: auto;
+  }
+}
 
 
 @media (min-width: 481px) and (max-width: 768px) {
