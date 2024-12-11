@@ -9,80 +9,84 @@
 </head>
 
 <body>
-  <header id='hero' class='hero'>
-    <nav>
-      <p>SaVance Ford</p>
-      <ul>
-        <li><a href="#hero">About</a></li>
-        <li>
-          <a href="#resume">Resume</a>
-        </li>
-        <li>Projects</li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <h1>Remember to give yourself some grace</h1>
-    <div class='about-blurb'>
-      <img src="https://placehold.co/400" alt="">
-      <p>
-        Creative Front-End Developer offering 5+ years of experience providing web solutions for multiple
-        organizations. Skilled in developing, designing, and testing multiple web-based applications including a range
-        of technologies. I desire to combine a broad background with strong technical and communication skills to excel
-        as a Front-End Developer. Fun fact, Donald Glover inspired me to get into code in 2013. Since then I've always
-        been interested in creating
-        excellent and engaging websites. With a background in Art, coding is just another way of creating something cool
-        and fun.</p>
-    </div>
-  </header>
-  <main id='resume'>
-    <h2>Resume</h2>
-    <article>
-      <header>
-        <div>
-          <h3>Front-End Developer | UX/UI Designer</h3>
-          <p>Aquafix | Madison, WI</p>
-        </div>
-        <p>July 2024 - Present</p>
-      </header>
-      <section>
-        <p class='job-description'>Responsible for the complete redesign, development, and enhancement of the user
-          experience
-          for the
-          teamaquafix.com website. Tech Stack: Wordpress, HTML, CSS, JavaScript and PHP.</p>
-        <p class='read-more'>Read more</p>
-      </section>
-    </article>
-  </main>
-  <footer id='contact'>
-    <h2>Contact</h2>
-    <form id="contact-form">
-      <label>
-        Name
-      </label>
-      <input id="user_name" type="text" name="user_name" autocomplete="user_name">
-      <label>
-        Email
-      </label>
+  <div class='container'>
+    <header id='hero' class='hero'>
+      <nav>
+        <p>SaVance Ford</p>
+        <ul>
+          <li><a href="#hero">About</a></li>
+          <li>
+            <a href="#resume">Resume</a>
+          </li>
+          <li>Projects</li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <h1>Remember to give yourself some grace</h1>
+      <div class='about-blurb'>
+        <img src="https://placehold.co/400" alt="">
+        <p>
+          Creative Front-End Developer offering 5+ years of experience providing web solutions for multiple
+          organizations. Skilled in developing, designing, and testing multiple web-based applications including a range
+          of technologies. I desire to combine a broad background with strong technical and communication skills to
+          excel
+          as a Front-End Developer. Fun fact, Donald Glover inspired me to get into code in 2013. Since then I've always
+          been interested in creating
+          excellent and engaging websites. With a background in Art, coding is just another way of creating something
+          cool
+          and fun.</p>
+      </div>
+    </header>
+    <main id='resume'>
+      <h2>Resume</h2>
+      <article>
+        <header>
+          <div>
+            <h3>Front-End Developer | UX/UI Designer</h3>
+            <p>Aquafix | Madison, WI</p>
+          </div>
+          <p>July 2024 - Present</p>
+        </header>
+        <section>
+          <p class='job-description'>Responsible for the complete redesign, development, and enhancement of the user
+            experience
+            for the
+            teamaquafix.com website. Tech Stack: Wordpress, HTML, CSS, JavaScript and PHP.</p>
+          <p class='read-more'>Read more</p>
+        </section>
+      </article>
+    </main>
+    <footer id='contact'>
+      <h2>Contact</h2>
+      <form id="contact-form">
+        <label>
+          Name
+        </label>
+        <input id="user_name" type="text" name="user_name" autocomplete="user_name">
+        <label>
+          Email
+        </label>
 
-      <input id="user_email" type="email" name="user_email" autocomplete="user_email">
-      <label>
-        Message
-      </label>
-      <textarea id="user_message" name="message" required placeholder="Your message..." minlength="10"></textarea>
+        <input id="user_email" type="email" name="user_email" autocomplete="user_email">
+        <label>
+          Message
+        </label>
+        <textarea id="user_message" name="message" required placeholder="Your message..." minlength="10"></textarea>
 
-      <button type="submit" value="Send">Submit</button>
-    </form>
-    <div class="message-container">
-      <h3 id="message"></h3>
-    </div>
-    <div class='copyright-socials'>
-      <ul class='socials'>
-        <li>Social 1</li>
-        <li>Social 2</li>
-      </ul>
-      <p>2024 SaVance Ford all rights reserved</p>
-    </div>
-  </footer>
+        <button type="submit" value="Send">Submit</button>
+      </form>
+      <div class="message-container">
+        <h3 id="message"></h3>
+      </div>
+      <div class='copyright-socials'>
+        <ul class='socials'>
+          <li>Social 1</li>
+          <li>Social 2</li>
+        </ul>
+        <p>2024 SaVance Ford all rights reserved</p>
+      </div>
+    </footer>
+  </div>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
   </script>
   <script src="script.js"></script>
