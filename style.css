@@ -55,16 +55,21 @@ header.hero {
 
 nav {
   height: 56px;
-  max-width: 1200px;
-  margin: auto;
-  z-index: 15;
-  position: sticky;
+  max-width: 1440px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border: solid 2px var(--secondary-color);
   border-radius: 8px;
   background-color: var(--primary-color);
+}
+
+.fixed-nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 15;
 }
 
 nav p {

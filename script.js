@@ -66,3 +66,19 @@ function processFormData(e) {
 
  //  Add eventlisteners
  form.addEventListener('submit', processFormData);
+
+
+/* --------------- NAV JS ------------- */
+
+const nav = document.querySelector('nav')
+
+
+ window.addEventListener('scroll', function() {
+
+  if(this.window.scrollY > 24) {
+    nav.classList.add('fixed-nav')
+  } else {
+    nav.classList.remove('fixed-nav')
+  }
+
+ })
