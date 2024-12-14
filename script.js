@@ -47,7 +47,7 @@ function processFormData(e) {
   }
 
 
-  // Validating form 
+  // Validating form
   validateForm();
 
   if(isValid === true) {
@@ -82,3 +82,20 @@ const nav = document.querySelector('nav')
   }
 
  })
+
+
+/* ---- HEADER JS ----- */
+
+const quotes = [
+  'Remember to give yourself some grace',
+  'Mistakes are proof that you are trying',
+  '"Today is another chance to get better"',
+  '"Opportunities don\'t happen, you create them"'
+]
+
+// Generate a random index between 0 and the length of the array
+const randomIndex = Math.floor(Math.random() * quotes.length);
+
+const h1 = document.querySelector('.hero-title')
+
+h1.innerText = quotes[randomIndex]
