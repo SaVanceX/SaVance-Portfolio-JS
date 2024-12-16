@@ -1,0 +1,63 @@
+{
+  "work": [
+    {
+      "company": "Aquafix",
+      "title": "Front-End Developer | UX/UI Designer | Digital Marketing Specialist",
+      "location": "Madison, WI",
+      "startDate": "JULY 2024",
+      "endDate": "Present",
+      "summary": "Redesigned, developed, and enhanced the user experience for the teamaquafix.com website, delivering a modern and engaging interface. Managed social media and email marketing campaigns using Buffer and Mailchimp, driving brand awareness and customer engagement."
+    },
+    {
+      "company": "Flagrant",
+      "title": "Developer",
+      "location": "Madison, WI",
+      "startDate": "DEC. 2023",
+      "endDate": "JUNE 2024",
+      "summary": "I worked on both external and internal client projects, developing and maintaining features to meet client needs. I completed user stories, fixed bugs, and consistently improved the user experience",
+      "highlights": [
+        "Contributed to a project that landed 4 CSS Design awards.",
+        "The public voted www.peoplestech.com to win best UI design, best UX design, and best innovation along with receiving Special Kudos from the CSSDA judges"
+      ]
+    },
+    {
+      "company": "Acquia Inc",
+      "title": "Software Engineer",
+      "location": "Boston, MA",
+      "startDate": "APR. 2024",
+      "endDate": "DEC. 2023",
+      "summary": "Implemented user-accessible components and features, developed and maintained client-specific functionalities, and wrote unit tests to ensure reliability and performance. Actively contributed to completing user stories fixing bugs, and enhancing the overall user experience."
+    },
+    {
+      "company": "American Family Insurance",
+      "title": "Application Developer",
+      "location": "Madison, WI",
+      "startDate": "JUNE 2018",
+      "endDate": "SEP. 2021",
+      "summary": "I developed and maintained various features, including one-page quoting tools. My work involved using front-end frameworks such as AngularJS and ReactJS with Redux. I wrote unit tests to ensure the functionality of features and components, completed user stories, fixed bugs and enhanced the speed and functionality of existing web pages. Additionally, I collaborated with coworkers to implement features within two-week sprints,and I demonstrated the completed features to the team at the end of each sprint."
+    },
+    {
+      "company": "American Family Insurance",
+      "title": "Application Developer",
+      "location": "Madison, WI",
+      "startDate": "JUNE 2017",
+      "endDate": "JUNE 2018",
+      "summary": "I developed and maintained various features, including one-page quoting tools. My work involved using front-end frameworks such as AngularJS and ReactJS with Redux. I wrote unit tests to ensure the functionality of features and components, completed user stories, fixed bugs and enhanced the speed and functionality of existing web pages. Additionally, I collaborated with coworkers to implement features within two-week sprints,and I demonstrated the completed features to the team at the end of each sprint.",
+      "highlights": [
+        "I participated in a 24-hour onsite hackathon at American Family, where I successfully developed a fully functional prototype. The prototype utilized Augmented Reality on mobile devices to scan furniture in your home and provide rough insurance estimates for each item."
+      ]
+    },
+    {
+      "company": "Adorable IO",
+      "title": "Front-End Developer | Graphic Designer",
+      "location": "Madison, WI",
+      "startDate": "JUNE 2017",
+      "endDate": "JUNE 2018",
+      "summary": "Responsible for designing and developing websites, focusing on UX/UI and wireframing. My skill set includes creating logos, posters, icons, and other visual elements. Worked in the agile workflows and have collaborated with peers to design and develop various web projects. Additionally, I volunteered at the YWeb Career Academy, utilized GitHub for version control, and deployed websites using Heroku.",
+      "highlights": [
+        "Created a website for Spanish speakers who want to learn HTML. https://lmht.github.io/",
+        "Pared up with a co-worker to create a one-page event site for the Madison + Ruby conference in 2017"
+      ]
+    }
+  ]
+}
