@@ -36,8 +36,9 @@ function buildArticleComponent ({ company, title, location, startDate, endDate, 
           <p>${startDate} - ${endDate}</p>
         </header>
         <section>
+        <div>
           <p class='job-description'>${summary}</p>
-            <p>highlights:</p>
+            <p>${highlights && highlights.length > 0 ? 'highlights' : ''}</p>
             <ul>
               ${
                 testArray.map(h =>
@@ -48,6 +49,7 @@ function buildArticleComponent ({ company, title, location, startDate, endDate, 
                 ).join('')
               }
             </ul>
+          </div>
           <p class='read-more'>Read more</p>
         </section>
       </article>
