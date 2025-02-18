@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"></script>
+
+</head>
+<body>
+  <main id="blog-posts">
+    <!-- Blog posts will be loaded here -->
+  </main>
+  
+  <script>
+        const converter = new showdown.Converter(); // Initialize Showdown
+
+  document.addEventListener("DOMContentLoaded", () => {
+    fetch("_posts/blog/2025-02-18-test-blog-post-yaaay.md")
+        .then(response => response.text())
+        .then(data => {
+          const htmlContent = converter.makeHtml(data); // Convert Markdown to HTML
+
+            document.getElementById("blog-posts").innerHTML = `<pre>${htmlContent}</pre>`;
+        });
+});
+</script>
+
+</body>
+
+</html>
