@@ -87,8 +87,8 @@ const nav = document.querySelector('nav')
 /* ---- HEADER JS ----- */
 
 const quotes = [
-  'Remember to give yourself some grace',
-  'Mistakes are proof that you are trying',
+  '"Remember to give yourself some grace"',
+  '"Mistakes are proof that you are trying"',
   '"Today is another chance to get better"',
   '"Opportunities don\'t happen, you create them"'
 ]
