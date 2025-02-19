@@ -4,28 +4,63 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gray-matter@4.0.3/dist/index.min.js"></script>
 
 </head>
 <body>
   <main id="blog-posts">
     <!-- Blog posts will be loaded here -->
   </main>
-  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+
   <script>
-        const converter = new showdown.Converter(); // Initialize Showdown
+    const postsContainer = document.getElementById("blog-posts");
+    let allPostsHTML = "";
 
-  document.addEventListener("DOMContentLoaded", () => {
-    fetch("_posts/blog/2025-02-18-test-blog-post-yaaay.md")
-        .then(response => response.text())
-        .then(data => {
-          console.log(data)
-          const htmlContent = marked.parse(data); // Convert Markdown to HTML
+    async function fetchAllPosts() {
+      const postFiles = ["_posts/blog/2025-02-18-test-blog-post-yaaay.md"]; // Add more post files dynamically later
+      for (const file of postFiles) {
+          console.log(file)
+            const response = await fetch(file);
+            console.log(response)
+            const markdownContent = await response.text();
+            const parsed = parseFrontmatter(markdownContent);
+            console.log(parsed.frontmatter)
+            allPostsHTML += `
+                <article>
+                    <h2>${parsed.frontmatter.title}</h2>
+                    <img src="${parsed.frontmatter.thumbnail}"/>
+                </article>
+            `;
 
-          document.getElementById("blog-posts").innerHTML = `<pre>${htmlContent}</pre>`;
-    });
-  });
+        }
+        postsContainer.innerHTML = allPostsHTML
+
+      
+    }
+
+
+    function parseFrontmatter(markdown) {
+      console.log(markdown)
+    const frontmatterRegex = /^---\r?\n([\s\S]*?)\r?\n---\r?\n([\s\S]*)?$/;
+    const match = markdown.match(frontmatterRegex);
+    console.log(match)
+
+    if (match) {
+      console.log('HELLOO')
+      console.log(match)
+
+      const yamlData = match[1];
+      const content = match[2];
+
+      // Parse YAML Frontmatter
+      const frontmatter = jsyaml.load(yamlData);
+      return { frontmatter, content };
+    } else {
+      return { frontmatter: {}, content: markdown };
+    }
+  }
+fetchAllPosts()
 </script>
 
 </body>
