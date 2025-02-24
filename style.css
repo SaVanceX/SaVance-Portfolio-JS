@@ -253,6 +253,7 @@ footer {
   }
 }
 
+/* ----- Medium Devices ----- */
 
 @media (min-width: 481px) and (max-width: 768px) {
   .about-blurb {
@@ -393,6 +394,7 @@ footer {
       section p.job-description {
         line-height: var(--mobile-line-hight);
         margin-bottom: 32px;
+        width: 100%;
       }
 
       p.read-more {
