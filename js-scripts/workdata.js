@@ -24,7 +24,6 @@ function buildArticleComponent ({ company, title, location, startDate, endDate, 
     })
   }
 
-  console.log(testArray)
 
   const articleComponent = `
   <article>
@@ -38,8 +37,8 @@ function buildArticleComponent ({ company, title, location, startDate, endDate, 
         <section>
         <div>
           <p class='job-description'>${summary}</p>
-            <p>${highlights && highlights.length > 0 ? 'highlights' : ''}</p>
-            <ul>
+            <p>${highlights && highlights.length > 0 ? 'Highlights:' : ''}</p>
+            <ul class="highlights">
               ${
                 testArray.map(h =>
                 `<li>
@@ -50,7 +49,6 @@ function buildArticleComponent ({ company, title, location, startDate, endDate, 
               }
             </ul>
           </div>
-          <p class='read-more'>Read more</p>
         </section>
       </article>
 `
@@ -62,6 +60,5 @@ function buildArticleComponent ({ company, title, location, startDate, endDate, 
 
 
 
-  // resumeSection.insertAdjacentHTML('beforeend', articleComponent)
 
 
