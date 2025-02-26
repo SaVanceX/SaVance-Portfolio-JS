@@ -107,7 +107,7 @@ a:visited, a {
 }
 
 
-h1,h2,h3 {
+h1,h2 {
   text-align: center;
   font-family: Roboto, "sans-serif";
   text-transform: uppercase;
@@ -124,6 +124,10 @@ h1 {
 h2 {
   margin-bottom: 24px;
   margin-top: 24px;
+}
+
+h3 {
+  text-align: left;
 }
 
 .about-blurb {
@@ -185,6 +189,11 @@ article {
   ul.highlights li {
     list-style: circle;
     margin-left: 28px;
+  }
+
+  ul.highlights li:first-child {
+    margin-bottom: 8px;
+    margin-top: 8px;
   }
 
 }
