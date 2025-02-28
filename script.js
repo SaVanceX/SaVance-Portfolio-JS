@@ -8,26 +8,10 @@ const userName = document.getElementById('user_name')
 const userEmail = document.getElementById('user_email')
 const userMessage = document.getElementById('user_message')
 const messageContainer = document.querySelector('.message-container');
-const message = document.getElementById('message');
+const message = document.querySelector('.message-container');
 
 
-let isValid = false;
-
-function validateForm() {
-  // Using constraint api
-  isValid = form.checkVisibility();
-
-  // Style main message for an error
-  if(isValid === false) {
-    message.textContent = 'Please fill out all the fields'
-    message.style.color = 'red'
-    messageContainer.style.borderColor = 'red';
-  }else if(isValid === true) {
-    message.innerText ="Your message is being sent";
-    message.style.color = 'Orange';
-    messageContainer.style.borderColor = 'Orange';
-  }
-}
+isValid = form.checkVisibility();
 
 const templateParams = {
   name: userName.value,
@@ -47,15 +31,12 @@ function processFormData(e) {
   }
 
 
-  // Validating form
-  validateForm();
-
   if(isValid === true) {
   emailjs.send('service_ba3rdvd', 'template_xhzsd92', templateParams)
   .then(function(response){
       message.innerText ="Thank you very much I will reply to you as soon as possible!";
       message.style.color = 'green';
-      messageContainer.style.borderColor = 'green';
+      messageContainer.style.borderColor = 'white';
       console.log('SUCCESS', response.status, response.text);
   }, function(error){
       console.log("FAILED", error);
