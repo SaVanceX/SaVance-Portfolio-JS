@@ -31,7 +31,7 @@
 
 body {
   font-size: var(--body-copy);
-  font-family: "Roboto Slab", "sans-serif", "serif";
+  font-family: "serif";
   background-color: var(--secondary-color);
   color: var(--tertiary-color);
   margin-left: 32px;
