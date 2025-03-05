@@ -4,7 +4,7 @@
 })();
 
 const form = document.getElementById('contact-form')
-const userName = document.getElementById('user_name')
+const userName = document.getElementById('username')
 const userEmail = document.getElementById('user_email')
 const userMessage = document.getElementById('user_message')
 const messageContainer = document.querySelector('.message-container');
